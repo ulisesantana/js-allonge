@@ -1,0 +1,33 @@
+{
+  "name": "js-allonge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "linter": "eslint .",
+    "linter:fix": "npm run linter -- --fix",
+    "test": "jest . --verbose",
+    "test:watch": "npm t -- --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ulisesantana/js-allonge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ulisesantana/js-allonge/issues"
+  },
+  "homepage": "https://github.com/ulisesantana/js-allonge#readme",
+  "devDependencies": {
+    "eslint": "^7.7.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^23.20.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^26.4.2"
+  }
+}
