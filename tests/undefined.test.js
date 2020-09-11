@@ -4,5 +4,6 @@ describe('undefined', () => {
     expect(JSON.stringify(undefined)).toBe(undefined); // but JS is tricky sometimes
     expect(JSON.stringify()).toBe(undefined); // same thing different flavour
     expect(JSON.stringify(() => 42)).toBe(undefined); // also happens with any non-JSON value
+    expect(JSON.stringify({})).toBe('{}');
   });
 });
