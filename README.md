@@ -1,6 +1,6 @@
 # js-allonge
 
-This is repository only with tests to better assimilate the reading of JavaScript Allongé Six Edition.
+This is a repository only with tests to better assimilate the reading of JavaScript Allongé Six Edition.
 
 ##Contribute
 
