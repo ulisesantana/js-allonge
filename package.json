@@ -1,7 +1,7 @@
 {
   "name": "js-allonge",
   "version": "1.0.0",
-  "description": "",
+  "description": "Chunks of code with tests to better assimilate the reading of JavaScript Allongé Six Edition.",
   "main": "index.js",
   "scripts": {
     "linter": "eslint .",

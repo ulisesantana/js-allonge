@@ -17,7 +17,7 @@ describe('The first sip: Basic Functions', () => {
       expect((() => (2 + 2, 3 + 3))()).toBe(6);
       expect((() => (2 + 2, 3 + 3, 1 + 1))()).toBe(2);
 
-      const spy = jest.fn(() => console.log('I\'ve been called'));
+      const spy = jest.fn( () => console.log('I\'ve been called'));
       (() => (spy(), 1 + 1, 2 + 2))();
       expect(spy).toBeCalled();
     });
