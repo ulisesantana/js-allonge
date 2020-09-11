@@ -49,7 +49,6 @@ describe('The first sip: Basic Functions', () => {
 
       expect(addTwoNumbers(2,3)).toBe(5);
       expect(addTwoNumbers.length).toBe(2);
-
     });
 
     it('a function arity can be checked', () => {
@@ -99,7 +98,6 @@ describe('The first sip: Basic Functions', () => {
       expect(original).toStrictEqual(modified);
     });
 
-
     it('a function will not modify a reference passed as argument if you create a new one', () => {
       const original = {
         a: 10,
@@ -120,5 +118,14 @@ describe('The first sip: Basic Functions', () => {
       expect(modified.a).toBe(20);
     });
 
+  });
+
+  describe('Closures and Scope', () => {
+    it('a closure binds variables to it\'s own environment', () => {
+      const times = x => y => x * y;
+      const times2 = times(2);
+
+      expect(times2(5)).toBe(10);
+    });
   });
 });
