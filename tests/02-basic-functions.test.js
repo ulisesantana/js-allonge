@@ -127,5 +127,12 @@ describe('The first sip: Basic Functions', () => {
 
       expect(times2(5)).toBe(10);
     });
+
+    it('an ancestor can be shadowed because JavaScript is always looking for the closest scope', () => {
+      const sum = x => (x, y) => x + y;
+      const uselessCurrying = sum(10);
+
+      expect(uselessCurrying(2,3)).toBe(5);
+    });
   });
 });
